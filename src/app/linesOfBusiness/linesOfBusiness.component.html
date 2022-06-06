@@ -18,9 +18,9 @@
     <a routerLink="/detail/{{lineOfBusiness.id}}">
       
       <span class="badge">{{lineOfBusiness.id}}</span> {{lineOfBusiness.name}} - {{lineOfBusiness.description}}
-    </a>
-    <button class="delete" title="delete lineOfBusiness"
+      <button class="delete" title="delete lineOfBusiness"
       (click)="delete(lineOfBusiness)">x</button>
-    
+      <span class="quote-count">Count: {{lineOfBusiness.quoteCount}}</span>
+    </a>
   </li>
 </ul>
