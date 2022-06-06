@@ -3,5 +3,16 @@
   <a routerLink="/dashboard">Search</a>
   <a routerLink="/linesOfBusiness">View All Lines Of Business</a>
 </nav>
+
+<h2>2 Most Popular Lines of Business</h2>
+<ul class="linesOfBusiness">
+  <li *ngFor="let lineOfBusiness of linesOfBusiness">
+    <a routerLink="/detail/{{lineOfBusiness.id}}">
+
+      <span class="badge">{{lineOfBusiness.id}}</span> {{lineOfBusiness.name}} - {{lineOfBusiness.description}}
+      <span class="quote-count">Count: {{lineOfBusiness.quoteCount}}</span>
+    </a>
+  </li>
+</ul>
 <router-outlet></router-outlet>
 <app-messages></app-messages>

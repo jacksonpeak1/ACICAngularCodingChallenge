@@ -9,7 +9,7 @@
 input {
   display: block;
   width: 100%;
-  padding: .5rem;
+  padding: 0.5rem;
   margin: 1rem 0;
   box-sizing: border-box;
 }
@@ -20,15 +20,15 @@ input {
 }
 
 .linesOfBusiness li:hover {
-  left: .1em;
+  left: 0.1em;
 }
 
 .linesOfBusiness a {
   color: #333;
   text-decoration: none;
-  background-color: #EEE;
-  margin: .5em;
-  padding: .3em 0;
+  background-color: #eee;
+  margin: 0.5em;
+  padding: 0.3em 0;
   height: 1.6em;
   border-radius: 4px;
   display: block;
@@ -50,37 +50,53 @@ input {
   font-size: small;
   color: white;
   padding: 0.8em 0.7em 0 0.7em;
-  background-color:#405061;
+  background-color: #405061;
   line-height: 1em;
-  position: relative;
-  left: -1px;
-  top: -4px;
   height: 1.8em;
   min-width: 16px;
   text-align: right;
-  margin-right: .8em;
+  margin-right: 0.8em;
   border-radius: 4px 0 0 4px;
 }
 
+.linesOfBusiness .quote-count {
+    display: inline-block;
+      font-size: small;
+      color: white;
+      padding: 0.8em 0.7em 0 0.7em;
+      background-color: #405061;
+      line-height: 1em;
+      height: 1.8em;
+      min-width: 16px;
+      text-align: right;
+      border-radius: 0 4px 4px 0;
+}
+
+.linesOfBusiness li a {
+    display: flex;
+      align-items: center;
+      justify-content: space-between;
+}
+
 .add-button {
- padding: .5rem 1.5rem;
- font-size: 1rem;
- margin-bottom: 2rem;
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  margin-bottom: 2rem;
 }
 
 .add-button:hover {
   color: white;
-  background-color: #42545C;
+  background-color: #42545c;
 }
 
 button.delete {
-  position: absolute;
-  left: 30em;
-  top: -10px;
-  background-color: white;
-  color:  #525252;
+background-color: white;
+  color: #525252;
   font-size: 1.1rem;
   padding: 1px 10px 3px 10px;
+  margin: auto;
+  position: absolute;
+  right: -45px;
 }
 
 button.delete:hover {
